@@ -1,0 +1,25 @@
+echo "mensaje" >> nombre.formato
+less
+more
+cat
+history>> nombre.formato
+history> nombre.formato
+-$ my home
+/s root
+mkdir
+tree
+tree |less
+sudo su-
+sudo su
+exit
+rm
+rmdir
+cp
+mv
+ln
+ln-s
+head
+tail
+wc
+clear
+md5sum
