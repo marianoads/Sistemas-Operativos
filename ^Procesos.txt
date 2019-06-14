@@ -1,0 +1,51 @@
+-PROCESOS-
+1- BIOS        --> ENTRADA Y SALIDA Estandar PARA todas las pcs 
+2- BOOT LOADER --> Gestor de arranque del dispositivo, es el primer proceso que se ejecuta en en el procesador, se encarga de cargar el sistema operativo.
+3- Kernel      -->  Es el principal responsable de facilitar a los distintos programas acceso seguro al hardware de la computadora. Es el encargado de gestionar recursos, 
+                    a través de servicios de llamada al sistema. También se encarga de decidir qué programa podrá hacer uso de un dispositivo de hardware y durante cuánto tiempo, 
+                    lo que se conoce como multiplexado.
+4- INIT        --> Es el primer proceso en ejecucion luego de cargar el Kernel,y el que a su vez genera todos los demás procesos.Se ejecuta como demonio y por lo general tiene PID 1.
+
+
+-COMANDOS-
+top=
+bg= Llevar y traer procecos
+fg= correr procesos
+jobs=
+kill  (15 o 19)= para matar zombie                        Diferencia entre kill 15 o 19(Pregunta ed parcial)
+killall =mata todos los procesos
+ps -ef
+disown
+
+-ESTADOS-
+R=Running
+S=Sleeping
+Z=Zombing
+Swap(No esta en memoria,no lo veo)
+stopped(No lo veo)
+
+-FECHAS-
+14/06 procesos usuarios
+21/06 parcial
+28/06 protocolos-seguridad
+5/07 entrega tps
+
+** manipulacion memoria disco rigido
+github
+lvm                              ** <<<< Lo que toma en el parcial
+
+
+teorico: lvm, sist. vers controles, procesos,usuarios, grupos y permisos
+RWX = (Lectura escritura Ejecucion)
+RWX-Propietario   
+RWX-Grupo
+RWX-Resto del mundo
+
+0 = --- = sin acceso
+1 = --x = ejecución
+2 = -w- = escritura
+3 = -wx = escritura y ejecución
+4 = r-- = lectura
+5 = r-x = lectura y ejecución
+6 = rw- = lectura y escritura
+7 = rwx = lectura, escritura y ejecución
